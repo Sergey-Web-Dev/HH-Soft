@@ -1,0 +1,11 @@
+.linear {
+  transition-timing-function: linear !important;
+}
+
+.width {
+  width: auto !important;
+}
+
+.padding {
+  padding-bottom: 2rem !important;
+}
