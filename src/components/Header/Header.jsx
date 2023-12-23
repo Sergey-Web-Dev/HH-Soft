@@ -11,8 +11,8 @@ import { Wrapper } from "../Wrapper/Wrapper";
 export const Header = ({ ...props }) => {
   return (
     <header {...props}>
-      <Wrapper className="absolute left-0 top-0 w-full h-full bg-black [clip-path:polygon(0%_0%,0%_100%,100%_0%)] z-10" />
-      <Navbar className="relative flex justify-between items-stretch w-85 mx-0 mx-auto z-20">
+      <Wrapper className="absolute left-0 top-0 w-full h-full bg-black [clip-path:polygon(0%_0%,0%_100%,100%_0%)]" />
+      <Navbar className="relative flex justify-between items-stretch w-85 mx-0 mx-auto z-50">
         <RouteLink route="/" name={<LogoHeader />} />
         <Lists className="flex items-center gap-8">
           {mockRoutesData.map(({ id, route, name }) => (

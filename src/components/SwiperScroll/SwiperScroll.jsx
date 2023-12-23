@@ -1,11 +1,11 @@
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// import "swiper/css";
+import "swiper/css";
 import "./Swiper.css";
 import "swiper/css/bundle";
 
-export const SwiperScroll = (className) => {
+export const SwiperScroll = () => {
   return (
     <Swiper
       className="text-[#635D6E] font-ubuntu font-normal text-base padding"
@@ -14,25 +14,73 @@ export const SwiperScroll = (className) => {
       slidesPerView={15}
       speed={2000}
       autoplay={{ delay: 0 }}
-      loop={{ loop: true }}
+      loop={true}
       wrapperClass="linear"
     >
-      <SwiperSlide className="width">BIM ТЕХНОЛОГИИ |</SwiperSlide>
-      <SwiperSlide className="width"> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
-      <SwiperSlide className="width"> AUTODESK |</SwiperSlide>
-      <SwiperSlide className="width"> ПЛАГИНЫ REVIT |</SwiperSlide>
-      <SwiperSlide className="width"> DYNAMO |</SwiperSlide>
-      <SwiperSlide className="width"> BIM ТЕХНОЛОГИИ |</SwiperSlide>
-      <SwiperSlide className="width"> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
-      <SwiperSlide className="width"> AUTODESK |</SwiperSlide>
-      <SwiperSlide className="width"> ПЛАГИНЫ REVIT |</SwiperSlide>
-      <SwiperSlide className="width"> DYNAMO |</SwiperSlide>
-      <SwiperSlide className="width"> BIM ТЕХНОЛОГИИ |</SwiperSlide>
-      <SwiperSlide className="width">КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
-      <SwiperSlide className="width"> AUTODESK |</SwiperSlide>
-      <SwiperSlide className="width"> DYNAMO |</SwiperSlide>
-      <SwiperSlide className="width"> BIM ТЕХНОЛОГИИ |</SwiperSlide>
-      <SwiperSlide className="width"> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide>BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide>КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      {/* <SwiperSlide>BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide> */}
+      {/* <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide>КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide>BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide>КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide>BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> ПЛАГИНЫ REVIT |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide>КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide>
+      <SwiperSlide> AUTODESK |</SwiperSlide>
+      <SwiperSlide> DYNAMO |</SwiperSlide>
+      <SwiperSlide> BIM ТЕХНОЛОГИИ |</SwiperSlide>
+      <SwiperSlide> КУРСЫ ПО ПРОДУКТАМ |</SwiperSlide> */}
     </Swiper>
   );
 };
